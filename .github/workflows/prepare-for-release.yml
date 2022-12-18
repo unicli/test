@@ -22,10 +22,10 @@ jobs:
           echo "current_version=$(echo $CURRENT_VERSION)" >> $GITHUB_ENV
           echo "last_version=$(echo $LAST_VERSION)" >> $GITHUB_ENV
       - name: Setup NodeJS 16
-        run: corepack enable
         uses: actions/setup-node@v3
         with:
           node-version: 16
+          corepack: true
           cache: pnpm
 
       - name: Install dependencies
