@@ -33,9 +33,9 @@ jobs:
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Test
         run: |
-          pnpm nx run-many --target=lint --all
-          pnpm nx run-many --target=build --all --prod
+          pnpm lint
+          pnpm build
