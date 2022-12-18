@@ -5,7 +5,7 @@
 [![Github Actions][github-actions-src]][github-actions-href]
 [![Codecov][codecov-src]][codecov-href]
 
-> Package description
+> Core and main binary of unicli
 
 ## Usage
 
@@ -13,23 +13,19 @@ Install package:
 
 ```sh
 # npm
-npm install @unicli/core
+npm install -g @unicli/core
 
 # yarn
-yarn add @unicli/core
+yarn global add @unicli/core
 
 # pnpm
-pnpm install @unicli/core
+pnpm install -g @unicli/core
 ```
 
 Import:
 
-```js
-// ESM
-import { } from '@unicli/core'
-
-// CommonJS
-const { } = require('@unicli/core')
+```bash
+uni
 ```
 
 ## 💻 Development
@@ -43,7 +39,7 @@ const { } = require('@unicli/core')
 
 Made with 💛
 
-Published under [MIT License](./LICENSE).
+Published under [MIT License](https://github.com/unicli/unicli/blob/main/LICENSE).
 
 <!-- Badges -->
 [npm-version-src]: https://img.shields.io/npm/v/@unicli/core?style=flat-square
@@ -52,8 +48,8 @@ Published under [MIT License](./LICENSE).
 [npm-downloads-src]: https://img.shields.io/npm/dm/@unicli/core?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/@unicli/core
 
-[github-actions-src]: https://img.shields.io/github/workflow/status/unicli/core/ci/main?style=flat-square
-[github-actions-href]: https://github.com/unicli/core/actions?query=workflow%3Aci
+[github-actions-src]: https://img.shields.io/github/workflow/status/unicli/core/publish/main?style=flat-square
+[github-actions-href]: https://github.com/unicli/core/actions?query=workflow%3Apublish
 
 [codecov-src]: https://img.shields.io/codecov/c/gh/unicli/core/main?style=flat-square
 [codecov-href]: https://codecov.io/gh/unicli/core
