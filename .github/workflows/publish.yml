@@ -43,7 +43,6 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
           echo "registry=https://registry.npmjs.org/" >> ~/.npmrc
           echo "always-auth=true" >> ~/.npmrc
-          cat .npmrc
           cat ~/.npmrc
           for LIBRARY in $(pnpm nx affected:libs --base=$last_version --head=$current_version --plain)
           do
