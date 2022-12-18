@@ -1,6 +1,6 @@
 {
   "name": "@unicli/core-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "repository": "unicli/test",
   "license": "MIT",
@@ -23,12 +23,13 @@
     "uni": "./dist/index.cjs"
   },
   "scripts": {
-    "build": "unbuild",
-    "dev": "onchange -i 'src/**/*.ts' -- unbuild",
+    "build": "unbuild && add-shebang",
+    "dev": "onchange -i 'src/**/*.ts' -- pnpm build",
     "test": "vitest run --coverage --passWithNoTests"
   },
   "devDependencies": {
     "@vitest/coverage-c8": "^0.25.8",
+    "add-shebang": "^0.1.0",
     "onchange": "^7.1.0",
     "typescript": "^4.9.4",
     "unbuild": "^1.0.2",

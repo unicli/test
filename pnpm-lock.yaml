@@ -35,12 +35,14 @@ importers:
   packages/core-test:
     specifiers:
       '@vitest/coverage-c8': ^0.25.8
+      add-shebang: ^0.1.0
       onchange: ^7.1.0
       typescript: ^4.9.4
       unbuild: ^1.0.2
       vitest: ^0.25.8
     devDependencies:
       '@vitest/coverage-c8': 0.25.8
+      add-shebang: 0.1.0
       onchange: 7.1.0
       typescript: 4.9.4
       unbuild: 1.0.2
@@ -1121,6 +1123,14 @@ packages:
     resolution: {integrity: sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+    dev: true
+
+  /add-shebang/0.1.0:
+    resolution: {integrity: sha512-CDyCOkCQzM7T1QtuaK6DJzyoypuqCsYRwg20bwyM4lCTs66PUitG8bBk+6/W0r/pDHBoq3s4Vznkarlgj8i/3w==}
+    deprecated: Package no longer maintained.
+    hasBin: true
+    dependencies:
+      prepend-file: 1.3.1
     dev: true
 
   /aggregate-error/3.1.0:
@@ -3409,6 +3419,11 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
+  /os-tmpdir/1.0.2:
+    resolution: {integrity: sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /p-limit/3.1.0:
     resolution: {integrity: sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ==}
     engines: {node: '>=10'}
@@ -3509,6 +3524,13 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prepend-file/1.3.1:
+    resolution: {integrity: sha512-NFKEPDka08hvbVUZOu5JtFKJuWkZhWOJ/Odz6tsMlHWDtg6aUncrbu/BV3uTPRNa5T69SzbWIucg11e2kr4vBA==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      tmp: 0.0.31
     dev: true
 
   /prettier-linter-helpers/1.0.0:
@@ -3928,6 +3950,13 @@ packages:
   /tinyspy/1.0.2:
     resolution: {integrity: sha512-bSGlgwLBYf7PnUsQ6WOc6SJ3pGOcd+d8AA6EUnLDDM0kWEstC1JIlSZA3UNliDXhd9ABoS7hiRBDCu+XP/sf1Q==}
     engines: {node: '>=14.0.0'}
+    dev: true
+
+  /tmp/0.0.31:
+    resolution: {integrity: sha512-lfyEfOppKvWNeId5CArFLwgwef+iCnbEIy0JWYf1httIEXnx4ndL4Dr1adw7hPgeQfSlTbc/gqn6iaKcROpw5Q==}
+    engines: {node: '>=0.4.0'}
+    dependencies:
+      os-tmpdir: 1.0.2
     dev: true
 
   /tmp/0.2.1:
