@@ -41,7 +41,7 @@ jobs:
       - name: Publish components (Npm packages)
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-          for LIBRARY in $(pnpm nx affected:libs --base=$last_version --head=$current_version --plain | awk 'NR > 2 && $1 != "Done"')
+          for LIBRARY in $(pnpm nx affected:libs --base=$last_version --head=$current_version --plain)
           do
             cd ./packages/$(echo $LIBRARY| cut -d'/' -f 2)
             npm publish --no-git-tag-version --no-push --yes
