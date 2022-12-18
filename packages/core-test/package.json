@@ -1,8 +1,8 @@
 {
-  "name": "@unicli/core",
+  "name": "@unicli/core-test",
   "version": "0.0.0",
   "description": "",
-  "repository": "unicli/core",
+  "repository": "unicli/test",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
