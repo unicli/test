@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "unicli",
+  "version": "0.0.0",
+  "license": "MIT",
+  "prettier": "@giveerr/prettier-config",
+  "scripts": {
+    "dev": "nx run-many --target=dev --parallel 10",
+    "test": "nx run-many --target=test --parallel 10",
+    "build": "nx run-many --target=build --parallel 10",
+    "clean": "nx run-many --target=clean --parallel 10",
+    "affected": "nx affected --target=build --parallel 10",
+    "lint": "eslint --ext .js,.ts,.mjs,.cjs . && prettier -c",
+    "lint:fix": "eslint --ext .js,.ts,.mjs,.cjs --fix . && prettier --write .",
+    "prepare": "is-ci || husky install"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix",
+    "package.json": "npx sort-package-json"
+  },
+  "devDependencies": {
+    "@giveerr/eslint-config": "^2.1.0",
+    "@giveerr/eslint-config-prettier-javascript": "^2.1.0",
+    "@giveerr/eslint-config-prettier-typescript": "^2.1.0",
+    "@giveerr/prettier-config": "^2.1.0",
+    "@nrwl/js": "15.3.3",
+    "@nrwl/workspace": "15.3.3",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^13.1.0",
+    "nx": "15.3.3",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "pnpm@7.18.2",
+  "engines": {
+    "node": "^16.11.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+  }
+}

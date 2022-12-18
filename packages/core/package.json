@@ -1,0 +1,37 @@
+{
+  "name": "@unicli/core",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "unicli/core",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "uni": "./dist/index.cjs"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "dev": "onchange -i 'src/**/*.ts' -- unbuild",
+    "test": "vitest run --coverage --passWithNoTests"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.25.8",
+    "onchange": "^7.1.0",
+    "typescript": "^4.9.4",
+    "unbuild": "^1.0.2",
+    "vitest": "^0.25.8"
+  }
+}
