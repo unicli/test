@@ -28,12 +28,12 @@
     "test": "vitest run --coverage --passWithNoTests"
   },
   "devDependencies": {
-    "@vitest/coverage-c8": "^0.28.1",
+    "@vitest/coverage-c8": "^0.28.2",
     "add-shebang": "^0.1.0",
     "onchange": "^7.1.0",
     "typescript": "^4.9.4",
     "unbuild": "^1.1.1",
-    "vitest": "^0.28.1"
+    "vitest": "^0.28.2"
   },
   "publishConfig": {
     "access": "public"
