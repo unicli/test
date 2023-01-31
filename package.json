@@ -19,10 +19,10 @@
     "package.json": "npx sort-package-json"
   },
   "devDependencies": {
-    "@giveerr/eslint-config": "^2.1.0",
-    "@giveerr/eslint-config-prettier-javascript": "^2.1.0",
-    "@giveerr/eslint-config-prettier-typescript": "^2.1.0",
-    "@giveerr/prettier-config": "^2.1.0",
+    "@giveerr/eslint-config": "^2.2.3",
+    "@giveerr/eslint-config-prettier-javascript": "^2.2.3",
+    "@giveerr/eslint-config-prettier-typescript": "^2.2.3",
+    "@giveerr/prettier-config": "^2.2.3",
     "@nrwl/js": "15.6.3",
     "@nrwl/workspace": "15.6.3",
     "eslint": "^8.33.0",
