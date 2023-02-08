@@ -15,21 +15,21 @@ importers:
       is-ci: ^3.0.1
       lint-staged: ^13.1.1
       nx: 15.6.3
-      prettier: ^2.8.3
+      prettier: ^2.8.4
       typescript: ^4.9.5
     devDependencies:
       '@giveerr/eslint-config': 2.2.3
       '@giveerr/eslint-config-prettier-javascript': 2.2.3
       '@giveerr/eslint-config-prettier-typescript': 2.2.3_typescript@4.9.5
       '@giveerr/prettier-config': 2.2.3
-      '@nrwl/js': 15.6.3_gfddc2gc7ooftgn3vpwlvgutsa
-      '@nrwl/workspace': 15.6.3_ixt4l6ptf47gmhhuxcve5dmsda
+      '@nrwl/js': 15.6.3_qise7hhp3tjax5lfsvcvfcv3py
+      '@nrwl/workspace': 15.6.3_sl4yhqy766lpm4ioafo5vrxqom
       eslint: 8.33.0
       husky: 8.0.3
       is-ci: 3.0.1
       lint-staged: 13.1.1
       nx: 15.6.3
-      prettier: 2.8.3
+      prettier: 2.8.4
       typescript: 4.9.5
 
   packages/core-test:
@@ -1519,7 +1519,7 @@ packages:
       '@giveerr/eslint-config-prettier': 2.2.3
       '@giveerr/prettier-config': 2.2.3
       eslint: 8.33.0
-      prettier: 2.8.3
+      prettier: 2.8.4
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-typescript
@@ -1534,7 +1534,7 @@ packages:
       '@giveerr/eslint-config-typescript': 2.2.3_typescript@4.9.5
       '@giveerr/prettier-config': 2.2.3
       eslint: 8.33.0
-      prettier: 2.8.3
+      prettier: 2.8.4
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -1548,8 +1548,8 @@ packages:
       '@giveerr/prettier-config': 2.2.3
       eslint: 8.33.0
       eslint-config-prettier: 8.6.0_eslint@8.33.0
-      eslint-plugin-prettier: 4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq
-      prettier: 2.8.3
+      eslint-plugin-prettier: 4.2.1_qa2thblfovmfepmgrc7z2owbo4
+      prettier: 2.8.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1709,7 +1709,7 @@ packages:
       - typescript
     dev: true
 
-  /@nrwl/js/15.6.3_gfddc2gc7ooftgn3vpwlvgutsa:
+  /@nrwl/js/15.6.3_qise7hhp3tjax5lfsvcvfcv3py:
     resolution: {integrity: sha512-OkjpbNAL6732jGPR7Lz/6K6AScqjxMGuZCHmMqmlK0NpSRcOtYJpGsn4XZzPRsWteqXCvY/l3efceiL6eNPmRg==}
     dependencies:
       '@babel/core': 7.20.12
@@ -1721,7 +1721,7 @@ packages:
       '@babel/runtime': 7.20.13
       '@nrwl/devkit': 15.6.3_nx@15.6.3+typescript@4.9.5
       '@nrwl/linter': 15.6.3_64ywuitnk7oxbiagfi6pjvvz3e
-      '@nrwl/workspace': 15.6.3_ixt4l6ptf47gmhhuxcve5dmsda
+      '@nrwl/workspace': 15.6.3_sl4yhqy766lpm4ioafo5vrxqom
       babel-plugin-const-enum: 1.2.0_@babel+core@7.20.12
       babel-plugin-macros: 2.8.0
       babel-plugin-transform-typescript-metadata: 0.3.2
@@ -1774,7 +1774,7 @@ packages:
       - debug
     dev: true
 
-  /@nrwl/workspace/15.6.3_ixt4l6ptf47gmhhuxcve5dmsda:
+  /@nrwl/workspace/15.6.3_sl4yhqy766lpm4ioafo5vrxqom:
     resolution: {integrity: sha512-RkCmDvcMXCVanR0RS8CZ14D7OMojSyvAal+b37P521MpizDkiN+zdRKewKvyOonzDeTAmZODtYccQ/uM5DjRfQ==}
     peerDependencies:
       prettier: ^2.6.2
@@ -1801,7 +1801,7 @@ packages:
       npm-run-path: 4.0.1
       nx: 15.6.3
       open: 8.4.0
-      prettier: 2.8.3
+      prettier: 2.8.4
       rxjs: 6.6.7
       semver: 7.3.4
       tmp: 0.2.1
@@ -3108,7 +3108,7 @@ packages:
       semver: 7.3.8
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_jqplj6qf3uqpxpu4gdyhwwasnq:
+  /eslint-plugin-prettier/4.2.1_qa2thblfovmfepmgrc7z2owbo4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3121,7 +3121,7 @@ packages:
     dependencies:
       eslint: 8.33.0
       eslint-config-prettier: 8.6.0_eslint@8.33.0
-      prettier: 2.8.3
+      prettier: 2.8.4
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -4532,8 +4532,8 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier/2.8.3:
-    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
+  /prettier/2.8.4:
+    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
